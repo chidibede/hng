@@ -1,0 +1,22 @@
+.carousel-item{
+    height: 35em;
+    background-repeat: repeat-y;
+}
+
+
+nav ul li a{
+  font-size: 1.5em;
+}
+
+.padding{
+  padding: 20px;
+}
+
+#social a{
+  font-size: 3em;
+  padding: 40px;
+}
+
+#social a .fa-google{
+  color:#bb0000;
+}
