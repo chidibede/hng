@@ -10,6 +10,174 @@
    <link rel="stylesheet" href="css/bootstrap.min.css">
    <link rel="stylesheet" href="css/all.min.css">
    <link rel="stylesheet" href="css/style.css">
+   <style type="text/css">
+		body {
+			background: #f0f0f0;
+			margin: 0;
+			padding: 0;
+			
+			font-family: 'Helvetica Neue', Helvetica, Arial;
+			line-height: 18px;
+			font-size: 12px;
+			
+			color: #222;
+		}
+		h1, h2, h3, h4 {
+			margin: 0 0 15px 0;
+			padding: 0;
+			font-weight: normal;
+		}
+		h1 {
+			font-size: 500%;
+		}
+		h2 {
+			font-size: 210%;
+		}
+		h3 {
+			font-size: 150%;
+		}
+		
+		p {
+			margin: 0 0 10px 0;
+		}
+		a {
+			color: #222;
+		}
+		/* ________________________________________________________ */
+		.rtl {
+			direction: rtl;
+		}
+		.clear {
+			clear: both;
+		}
+
+		#main {
+			background: #fff;
+			width: 900px;
+			padding: 35px;
+			margin: 0 auto 15px auto;
+			overflow: hidden;
+			
+			box-shadow: 0 0 6px #ccc;
+		}
+		
+		#title {
+			margin: 0px 0 30px 0;
+			line-height: 70px;
+			text-align: center;
+			color: #111;
+		}
+		
+		#credit {
+			margin-bottom: 20px;
+			font-size: 11px;
+			color: #999;
+			text-align: center;
+		}
+			#credit a {
+				color: #999;
+			}
+		
+		p label {
+			float: left;
+			margin-right: 10px;
+			min-width: 50px;
+		}
+			p label span.colon {
+				float: right;
+			}
+		p span.value {
+			float: left;
+			width: 70%;
+			display: block;
+		}
+		
+		.section {
+			margin-bottom: 40px;
+			padding-bttom: 20px;
+		}
+		
+		.item {
+			margin: 0 0 20px 0;
+		}
+
+		.basic-info {
+			padding: 0px 0 0px 140px;
+			
+		}
+		.basic-info p {
+			float: left;
+			width: 48%;
+			margin: 0 0 0px 0;
+		}
+		.basic-info p.full {
+			width: 100%;
+			float: none;
+		}
+			.basic-info .r {
+				float: right;
+			}
+
+		/* education _____________________________ */
+		
+		.section .title {
+			border-bottom: 1px solid #ddd;
+			padding-bottom: 5px;
+		}
+		.section span.value {
+			display: block;
+		}
+		.section h3 span.l, .section span.r {
+			width: 49%;
+			float: left;
+		}
+			.section span.r {
+				float: right;
+				text-align: right;
+			}
+			.section-education .school,
+			.section-work .job_title {
+				font-size: 120%;
+				display: block;
+				margin: 5px 0 5px 0;
+			}
+
+		/* ___ photo ___ */
+		#photo {
+			width: 160px;
+			height: 200px;
+			overflow: hidden;
+			float: left;
+			margin-top: 12px;
+			border-radius: 4px;
+		}
+		#photo img {
+			width: 100%;
+			height: auto;
+		}
+
+		.header.photo {
+			margin-left: 190px;
+		}
+		.header.photo #title {
+			text-align: left;
+		}
+		.header.photo .basic-info {
+			float: none;
+			padding: 0;
+		}
+
+		@media screen and (max-width: 950px) {
+			body {
+				background: #fff;
+			}
+			#main {
+				box-shadow: none;
+				padding: 0;
+				padding: 5px;
+			}
+		}
+	</style>
 </head>
 <body>
     <nav class="navbar navbar-expand-md navbar-dark bg-dark">
@@ -40,7 +208,157 @@
         
       </nav>
 
-  <h1>the Resume Page will be available in the next version.</h1>
+      <div id="main">
+          <div id="photo">
+          <img src="http://files1.cvmkr.com/8cd6b9_2892899_6995054.jpg" alt="" />
+        </div>
+        <div class="header photo">
+      
+      <h1 id="title">Enwereji Chidi Bede</h1>
+      <div class="basic-info section">
+              <p class="email"><label>E-mail<span class="colon">:</span></label> <span class="value">chidibede@gmail.com</span></p>
+        
+              <p class="website"><label>Website<span class="colon">:</span></label> <span class="value">github.com/chidibede, <a href="https://medium.com/@chidibede" rel="nofollow">https://medium.com/@chidibede</a></span></p>
+        
+              <p class="phone"><label>Phone<span class="colon">:</span></label> <span class="value">+240555593710</span></p>
+        
+              <p class="address "><label>Address<span class="colon">:</span></label>
+            <span class="value">
+              Opposite Getesa Office, Santa-Maria III, Malabo, Equatorial Guinea<br />Lowcost-Housing Estate, Umuahia, Nigeria				</span>
+          </p>
+            <div class="clear"> </div>
+      </div><!-- basic-info //-->
+    
+          </div><div class="clear"> </div>
+      
+        
+          <div class="section section-work">
+          <h2 class="title">Work experience</h2>
+          <div class="set">
+                    <div class="item">
+                      <h3><span class="company l">Campus Gate Academy</span>
+                  <span class="date r">June 2010 &mdash; December 2010</span>
+                    </h3>
+                    <div class="clear"> </div>
+                    <span class="job_title">Student Mathematics Tutor</span><div class="info"><ul><li>Preparing students for the Senior School Certificate Examination</li><li>Preparing Students for the University Matriculation Exams</li></ul></div><div class="clear"> </div>
+                    </div>
+                  
+                    <div class="item">
+                      <h3><span class="company l">Smat Paints</span>
+                  <span class="date r">September 2012 &mdash; December 2012</span>
+                    </h3>
+                    <div class="clear"> </div>
+                    <span class="job_title">Intern</span><div class="info">I was responsible for analyzing the final product of the product for texture and thickness consistency</div><div class="clear"> </div>
+                    </div>
+                  
+                    <div class="item">
+                      <h3><span class="company l">Sieco Ventures</span>
+                  <span class="date r">June 2013 &mdash; December 2013</span>
+                    </h3>
+                    <div class="clear"> </div>
+                    <span class="job_title">Quality control and assurance operative (intern)</span><div class="info"><ul><li>Soap Raw materials Quality Analysis</li><li>Soap Product quality Analysis</li><li>Raw Materials proportion analysis</li></ul></div><div class="clear"> </div>
+                    </div>
+                  
+                    <div class="item">
+                      <h3><span class="company l">Grace and Mercy Pharmaceutical</span>
+                  <span class="date r">January 2015 &mdash; October 2015</span>
+                    </h3>
+                    <div class="clear"> </div>
+                    <span class="job_title">Assistant coordinator, information and communications technology</span><div class="info"><ul><li><span>Management of inventory Database</span></li></ul>
+    
+    <ul><li><span>Management and
+    operation of QuickBooks point of sale Software</span></li></ul>
+    
+    <ul><li><span>Data
+    synchronization of retail outlets</span></li></ul>
+    
+    <ul><li><span>Over the counter
+    drug sales</span></li></ul>
+    
+    <ul><li><span>Training of
+    QuickBooks point of sale operators</span></li></ul>
+    
+    <ul><li><span>Data tracking of
+    incoming and outgoing goods</span></li></ul></div><div class="clear"> </div>
+                    </div>
+                  
+                    <div class="item">
+                      <h3><span class="company l">Oris Education Center</span>
+                  <span class="date r">October 2015 &mdash; present</span>
+                    </h3>
+                    <div class="clear"> </div>
+                    <span class="job_title">Cambridge Science Instructor</span><div class="info"><ul><li>Physics and Chemistry to 4 Cambridge Class Level Instructor</li><li> School Account Book and Finances Manager</li><li>Exams and Records Coordinator</li><li>Academic Planner</li><li>Assistant Administrator </li></ul></div><div class="clear"> </div>
+                    </div>
+                  </div>
+        </div>
+          <div class="section section-qualifications">
+          <h2 class="title">Qualifications</h2>
+          <div class="set">
+                  <div class="item">
+                    <span class="info"><ul><li><span>Senior School Certificate Examination (WASSCE)</span></li><li><span>B.Eng. Chemical Engineering (Second class Lower)</span></li></ul></span>
+                  </div>
+                </div>
+        </div>
+          <div class="section section-education">
+          <h2 class="title">Education</h2>
+          <div class="set">
+                <div class="item">
+                  <h3><span class="course l">Secondary School Education</span>
+                <span class="date r">September 2003 &mdash; June 2009</span>
+                  </h3>
+                  <div class="clear"> </div>
+                  <span class="school">Masters Vessel Classical Academy</span><span class="clear"> </span>
+                </div>
+                
+                <div class="item">
+                  <h3><span class="course l">Chemical Engineering</span>
+                <span class="date r">September 2009 &mdash; September 2014</span>
+                  </h3>
+                  <div class="clear"> </div>
+                  <span class="school">Federal University of Technolgy, Owerri Nigeria</span><span class="clear"> </span>
+                </div>
+                </div>
+        </div>
+          <div class="section section-1554084616392">
+          <h2 class="title">Key Skills</h2>
+          <div class="set">
+                  <div class="item">
+                    <span class="info"><p><span></span></p><ul><li><span><span>Microsoft Office</span></span></li></ul>
+    
+    <p></p><ul><li><span>Matlab application and programming (technical computing)</span></li><li>Website development</li><li>Data Analysis</li><li>Machine Learning</li><li>Deep Learning </li><li>Soap quality
+    control and assurance</li><li>Water treatment
+    and purification</li><li>Bio sand water filtration</li><li>relational database (mySQL, SQlite)</li><li>Python Programming Language</li><li>Javascript</li><li>Javascript frameworks (Node.js, React, Express)</li><li>Bootstrap Web Design Framework</li><li>Learning
+    Enthusiast</li></ul></span>
+                  </div>
+                </div>
+        </div>
+          <div class="section section-interests">
+          <h2 class="title">Interests</h2>
+          <div class="set">
+                  <div class="item">
+                    <span class="info"><p></p><ul><li><span>Reading</span></li><li>Research</li><li>Writing Codes</li><li>Working with Data</li><li>Artificial Intelligence</li><li>Gaming</li><li>Travelling</li></ul></span>
+                  </div>
+                </div>
+        </div>
+          <div class="section section-1554084931977">
+          <h2 class="title">Projects</h2>
+          <div class="set">
+                  <div class="item">
+                    <span class="info"><ul><li>Twitter Sentiment Analysis of the Top Presidential Candidates in Nigeria</li><li>Spam/Ham Detection</li><li>Result recording Software</li><li>Image Recognition Algorithm</li></ul></span>
+                  </div>
+                </div>
+        </div>
+          <div class="section section-references">
+          <h2 class="title">References</h2>
+          <div class="set">
+                  <div class="item">
+                    <span class="info">References available upon request.</span>
+                  </div>
+                </div>
+        </div>
+        
+    </div>
+      <div id="credit">Made with <a href="https://cvmkr.com/">CV Maker</a></div>
 
   <!-- Attached below are the bootstrap javascript file and jquery and font awesome javascript file file-->
   <script src="js/jquery.min.js"></script>
